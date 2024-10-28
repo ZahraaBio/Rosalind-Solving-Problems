@@ -1,0 +1,22 @@
+#First start with a variable and set up your DNA seq to it
+s = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
+#Set a counter for each Nucleotide in DNA, we got A for Adenin, T for Thymine, G for Guanine, and C for Cytocine
+A_count = 0
+T_count = 0
+G_count = 0
+C_count = 0
+
+#Loop around your DNA sequance to count the numbers of each Nucleotide in it, and increase the counter of each letter
+for i in s:
+  if i == "A":
+    A_count = A_count + 1
+  if i == "T":
+    T_count = T_count + 1
+  if i == "A":
+    G_count = G_count + 1
+  if i == "A":
+    C_count = C_count + 1
+
+#Print the results number of each counter to discover how many nucleotide are there in your DNA seq
+print(A_count, T_count, G_count, C_count)
+
