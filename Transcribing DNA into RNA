@@ -1,0 +1,19 @@
+#In this Task, we are going to Transcrib DNA to RNA
+#You can find more information about Transcribing and the diffrance between DNA and RNA in ROSALIND website along with this problem description
+#However, RNA got "U" for Uracil inested of "T" for Thymine in DNA
+#Start by stting up our DNA seq for a varible called s, notice it got "T"
+
+s = "GATGGAACTTGACTACGTAAATT"
+#set a varible to store the new RNA seq that will transcript from DNA
+RNA_seq = ""
+
+#loop around s, your DNA seq, if you notice "T" for Thymine, add Uracil or "U" for the RNA_seq, the seq that you will generte, but if you loop it and did not notice T, you can
+#add the same letter that you found in DNA seq to your RNA seq.
+for i in s:
+   if i == "T":
+   RNA_seq = RNA_seq + "U":
+   else"
+   RNA_seq = RNA_seq + i:
+
+#print the result
+print(RNA_seq)
