@@ -1,0 +1,21 @@
+#in this task, we will complete the dna seq, A match to T, and C match to G, you can find more information about Complementing in ROSALIND website along with this task
+s = "AAAACCCGGT"
+#set a DNA_reverse seq variable to add the new matching to s DNA seq
+s_reverse = ""
+
+#loop around DNA seq to match it with the complementray letter for each nucletide 
+for i in s:
+   if i == "A":
+   s_reverse = s_reverse + "T":
+if i == "T":
+   s_reverse = s_reverse + "A":
+if i == "C":
+   s_reverse = s_reverse + "G":
+if i == "G":
+   s_reverse = s_reverse + "C":
+
+#after finnishing matching, you need to know that the complementary must be from 3' to '5, you should reverse the result
+#print it with reverse result
+print(s_reverse[::-1])
+
+#-1 make the result start from the end
